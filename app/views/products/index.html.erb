@@ -1,0 +1,14 @@
+<%= image_tag(('bayside-brewery-logo.png'), class: 'logo') %>
+
+<h1>The Bayside Brewery Shop</h1>
+<h3><a href="https://www.thebaysidebrewery.com">Back to TheBaysideBrewery.com</a></h3>
+
+<div class="product-container">
+  <% @products.each do |product| %>
+    <div class="product">
+      <%= image_tag((product.img_path), class: 'product-image') %>
+      <p><%= product.name %></p>
+      <p><%= product.price %></p>
+    </div>
+  <% end %>
+</div>
