@@ -13,9 +13,21 @@
  *= require_tree .
  *= require_self
  */
-html {
-  color: gold;
+body {
+  background-image: url("mobile-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.wrapper {
   background-color: black;
+  color: white;
+  padding: 2em;
+  width: 80%;
+  border: 2px solid gold;
+  margin: 0 auto;
 }
 
 .logo {
@@ -33,7 +45,7 @@ h3 {
 
 h3 > a {
   text-decoration: none;
-  color: gold;
+  color: white;
 }
 
 p {
