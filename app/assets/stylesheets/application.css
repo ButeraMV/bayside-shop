@@ -13,12 +13,19 @@
  *= require_tree .
  *= require_self
  */
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-image: url("mobile-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {
@@ -27,7 +34,7 @@ body {
   padding: 2em;
   width: 80%;
   border: 2px solid gold;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 .logo {
@@ -46,6 +53,14 @@ h3 {
 h3 > a {
   text-decoration: none;
   color: white;
+}
+
+h3 > a:visited {
+  color: white;
+}
+
+h3 > a:hover {
+  color: gold;
 }
 
 p {
@@ -69,4 +84,13 @@ p {
 .product-image {
   width: 200px;
   height: 200px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
 }
